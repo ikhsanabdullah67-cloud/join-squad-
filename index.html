@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QRIS Squad - Mabar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      animation: fadeDown 1.2s ease;
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #00ffe7;
+      text-shadow: 0 0 15px #00ffe7;
+    }
+    header p { opacity: 0.85; margin-top: 10px; }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 25px rgba(0,255,231,0.2);
+      animation: fadeUp 1.2s ease;
+    }
+
+    .card h2 {
+      color: #00ffe7;
+      margin-bottom: 15px;
+    }
+
+    ul li { margin-bottom: 8px; }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: linear-gradient(45deg, #00ffe7, #00b3ff);
+      color: #000;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 20px rgba(0,255,231,0.8);
+      transition: 0.3s;
+    }
+    .btn:hover { transform: scale(1.08); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .role {
+      background: rgba(0,0,0,0.35);
+      padding: 15px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 0.85em;
+      opacity: 0.7;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="squad.png" alt="logo" style="width:140px; margin-bottom:15px; filter: drop-shadow(0 0 15px #00ffe7); animation: fadeDown 1.2s ease;" />
+  <h1>QRIS SQUAD</h1>
+  <p>Squad Mabar • Solid • Santai Tapi Savage</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>Tentang Squad</h2>
+    <p>QRIS Squad adalah squad Mobile Legends untuk mabar santai & turnamen kecil. Fokus pada teamwork, rotasi rapi, dan fun gameplay.</p>
+  </div>
+
+  <div class="card">
+    <h2>Role Dibutuhkan</h2>
+    <div class="grid">
+      <div class="role">Tank / Roamer</div>
+      <div class="role">Jungler</div>
+      <div class="role">Midlaner</div>
+      <div class="role">Gold Lane</div>
+      <div class="role">Exp Lane</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Syarat Join</h2>
+    <ul>
+      <li>Minimal Rank Mythic / MH</li>
+      <li>Aktif mabar & war</li>
+      <li>No toxic & respect tim</li>
+      <li>Siap VC Discord / WA</li>
+    </ul>
+  </div>
+
+  <div class="card" style="text-align:center;">
+    <h2>Join QRIS Squad</h2>
+    <p>Gabung sekarang & mabar bareng tim solid</p><br>
+    <a class="btn" href="https://chat.whatsapp.com/BCA2FsH1qIF44gO1b0OnIl" target="_blank">JOIN GRUP WHATSAPP</a>
+    <br><br>
+    <p style="font-size:0.8em; opacity:0.8;">Atau scan QR di bawah</p>
+    <img src="qr-join-qris.png" alt="QR Join QRIS Squad" style="width:160px; margin-top:10px; border-radius:12px; box-shadow:0 0 15px rgba(0,255,231,0.6);" />
+  </div>
+
+</div>
+
+<footer>
+  © 2026 QRIS Squad • Mobile Legends
+</footer>
+
+</body>
+</html>
